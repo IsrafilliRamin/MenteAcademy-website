@@ -1,0 +1,887 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --puple: #5f038b;
+  --headColor: #7300ab;
+  --black: #000000;
+  --white: #fff;
+  --elaqe: #fbf7f7;
+  --fotter:#16011E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header css start */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 1px 7px rgb(173, 173, 173);
+}
+
+.HeadTelim, .HeadTeliciler{
+  position: relative;
+}
+
+header nav {
+  display: flex;
+ /*  width: 100%; */
+  align-items: center;
+ /*  justify-content: center; */
+}
+
+header .headImg{
+  height: 49px;
+  width: 58px;
+}
+
+header .headImg img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+header nav .fa-bars {
+  font-size: 25px;
+  display: none;
+}
+header nav ul {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #686464;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+header nav ul li{
+  position: relative;
+  transition: 1s all;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  
+}
+header nav ul li::before{
+  display: block;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: gray;
+  position: absolute;
+  bottom: 10px;
+  opacity: 0;
+}
+
+header nav ul li:hover::before{
+  background-color: var(--headColor);
+  transition: 1s all;
+  bottom: 4px;
+  opacity: 1;
+}
+
+/* header css end */
+
+/* main css start  */
+/* swiper css */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper2 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content !important;
+}
+
+.mySwiper2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide-color {
+  background-color: var(--headColor);
+  height: 100%;
+  width: 100%;
+}
+
+.arrowLeft {
+  transform: rotate(180deg);
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  visibility: hidden;
+}
+.swiper-button-prev {
+  left: 100px !important;
+  right: auto;
+}
+.swiper-button-next {
+  right: 100px !important;
+}
+.swiper-pagination-bullet-active {
+  color: white !important;
+  background-color: white !important;
+}
+.loginCenterBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  font-family: sans-serif;
+}
+.loginImgBox {
+  height: 140px;
+  width: 160px;
+}
+
+main #təlimlər {
+  height: 100vh;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+main #təlimlər .TelimBasliq {
+  border-bottom: 2px solid rgb(197, 197, 197);
+  width: 110px;
+  padding-bottom: 5px;
+}
+
+main #təlimlər .TelimConta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  height: 95vh;
+}
+
+main #təlimlər .TelimConta .TelimImgBox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main #təlimlər .TelimConta .TelimContaLeft {
+  position: relative;
+  display: flex;
+}
+
+main #təlimlər .TelimConta .TelimContaLeft .TelimContaLeftBox2 {
+  transform: rotate(180deg);
+  position: relative;
+  top: 50px;
+}
+main #təlimlər .TelimConta .TelimContaLeft .TelimContaLeftBox1 {
+  position: relative;
+  bottom: 50px;
+}
+
+main #təlimlər .TelimConta .TelimContaLeft .TelimContaLeftBox1 .TelimContaLeftFirst {
+  width: 209px;
+  height: 310.494px;
+  border-radius: 230.5px 0px 0px 0px;
+  background: var(--puple);
+}
+
+main #təlimlər .TelimConta .TelimContaLeft .TelimContaLeftBox1 .TelimContaLeftSecond {
+  width: 209px;
+  height: 250.494px;
+  border-radius: 0px 0px 0px 230.5px;
+  background: var(--black);
+}
+main #təlimlər .TelimConta .TelimContaLeft .TelimContaLeftBox2 .TelimContaLeftFirst1 {
+  width: 209px;
+  height: 310.494px;
+  border-radius: 230.5px 0px 0px 0px;
+  background: var(--puple);
+}
+main #təlimlər .TelimConta .TelimContaLeft .TelimContaLeftBox2 .TelimContaLeftSecond1 {
+  width: 209px;
+  height: 250.494px;
+  border-radius: 0px 0px 0px 230.5px;
+  background: var(--black);
+}
+
+main #təlimlər .TelimConta .TelimContaRight .TelimContaRightBox .TelimContaRightBox1 {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+main #təlimlər .TelimConta .TelimContaRight .TelimContaRightBox {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main #təlimlər .TelimConta .TelimContaRight .TelimContaRightBox .TelimContaRightBox1 .TelimContaRightBoxLeft {
+  background-color: var(--black);
+  padding: 15px;
+  border-radius: 100%;
+}
+
+main #təlimçilər {
+  height: 100vh;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+main #təlimçilər .TelimBasliq {
+  border-bottom: 2px solid rgb(197, 197, 197);
+  width: 110px;
+  padding-bottom: 5px;
+}
+main #təlimçilər .telimciConta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+main #təlimçilər .telimciConta .telimciText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #təlimçilər .telimciConta .telimciText h3 {
+  color: #686464;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main #təlimçilər .telimciConta .telimciText p {
+  color: #686464;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+main #təlimçilər .telimciConta .telimciContaBox .telimciBox {
+  width: 284px;
+}
+
+main #təlimçilər .telimciConta .telimciContaBox .telimciBox .imgBox {
+  position: relative;
+  top: 5px;
+}
+main #təlimçilər .telimciConta .telimciContaBox .telimciBox .imgBox img {
+  position: relative;
+}
+main #təlimçilər .telimciConta .telimciContaBox .telimciBox .imgBox .imgBoxvecto2 {
+  position: absolute;
+  left: 90px;
+  top: 26px;
+}
+main #təlimçilər .telimciConta .telimciContaBox .telimciBox .imgBox .imgBoxvecto1 {
+  position: absolute;
+  left: 77px;
+
+  top: 80px;
+}
+
+main #təlimçilər .telimciConta .telimciContaBox .telimciBox .textBox {
+  background-color: var(--puple);
+  color: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 1px !important;
+}
+
+.mySwiper2 .swiper-pagination-bullet-active {
+  background-color: #000000 !important;
+}
+
+main #haqqında {
+  height: 100vh;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+main #haqqında .TelimBasliq {
+  border-bottom: 2px solid rgb(197, 197, 197);
+  width: 110px;
+  padding-bottom: 5px;
+}
+main #haqqında .haqqimizdaContaBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  gap: 40px;
+}
+
+main #haqqında .haqqimizdaContaBox .haqqimizdafirstP {
+  width: 55vw;
+  margin: 0 auto;
+}
+
+main #haqqında .haqqimizdaContaBox h3 {
+  color: #686464;
+  font-family: Murecho;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+main #haqqında .haqqimizdaContaBox p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+main #əlaqə {
+  background-color: var(--elaqe);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+main #əlaqə input {
+  padding: 10px;
+  fill: #fff;
+  stroke-width: 1px;
+  stroke: #16011e;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 60vw;
+  height: 62px;
+  border-radius: 8px;
+  color: #00275d;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+main #əlaqə textarea {
+  fill: #fff;
+  stroke-width: 1px;
+  stroke: #16011e;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 60vw;
+  height: 180px;
+  border-radius: 8px;
+  color: #00275d;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: start;
+  padding: 10px;
+}
+
+main #əlaqə input::placeholder {
+  color: #00275d;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.checConta {
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main #əlaqə .checBox {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  height: 62px;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+
+main #əlaqə .checBox .chec{
+  width: 1.5vw;
+  height: 1.5vw;
+}
+
+
+main #əlaqə .checBox .checImg{
+  height: 35px;
+  width: 35px;
+}
+
+
+main #əlaqə .checBox .checImg img{
+  width: 100%;
+  height: 100%;
+}
+
+
+main #əlaqə .checConta .formBtn{
+  height: 50px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #000;
+  width: 10vw;
+  color: white;
+}
+
+
+/* main css end  */
+
+
+/* footer start */
+
+footer{
+  background-color:var(--fotter) ;
+  color: white;
+ 
+}
+
+footer .footerConta {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+footer .footerConta  .footerTop{
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 300px;
+flex-wrap: wrap;
+}
+
+
+footer .footerConta  .footerTop .leftFooterImg{
+  height: 159px;
+    width: 185px;
+}
+footer .footerConta  .footerTop .leftFooterImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer .footerConta  .footerTop .leftFooterRight{
+  width: 250px;
+  height: 150px;
+}
+footer .footerConta  .footerTop .leftFooterRight img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+footer .footerConta  .footerTop  .fotDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 117px;
+ 
+}
+
+footer .footerConta  .footerTop .fotIconBox{
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+/* footer  end */
+
+
+
+
+/* details css start */
+
+main #TəlimçilərDetails{
+  height: 100vh;
+  margin-top: 100px;
+  margin: 0 auto;
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.TəlimçilərDetailsHead{
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+
+main #TəlimçilərDetails .TelimcilerDetailsConta{
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+main #TəlimçilərDetails .TelimDetailsConta {
+ box-shadow: 9px 9px 9px rgb(181, 181, 181);
+ height: 100%;
+ width: 400px;
+}
+main #TəlimçilərDetails .TelimcilerDetailsConta .TelimcilerDetailsRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+main #TəlimçilərDetails .TelimcilerDetailsConta .TelimcilerDetailsRight .TelimcilerDetailsRightImgBox{
+  width: 328px;
+  height: 401px;
+position: relative;
+z-index: 1;
+}
+
+main #TəlimçilərDetails .TelimcilerDetailsConta .TelimcilerDetailsRight .TelimcilerDetailsRightBox{
+  border: 8px solid #8311B9;
+  width: 234px;
+height: 367px;
+position: absolute;
+z-index: 0;
+left: -47px;
+}
+
+main #TəlimçilərDetails .TelimcilerDetailsConta .TelimcilerDetailsRight .TelimcilerDetailsRightImgBox img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+main #TəlimçilərDetails .TelimBasliq{
+  position: relative;
+  left: 150px;
+  bottom: 40px;
+}
+
+main  #TəlimçilərDetails .TelimcilerDetailsConta .TelimcilerDetailsLeft{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: #686464;
+font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+
+main  #TəlimçilərDetails .TelimcilerDetailsConta .TelimcilerDetailsLeft .TelimcilerDetailsLeftbox1{
+  background: #EEEBEB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 20px;
+}
+main #TəlimçilərDetails .TelimcilerDetailsConta .TelimcilerDetailsLeft .TelimcilerDetailsLeftbox2{
+  background: #EEEBEB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 20px;
+}
+
+
+
+main .TelimcilerDetailsConta .TelimDetailsRight .TelimcilerDetailsRightImgBox1 {
+  width: 150px;
+  height:150px;
+}
+main .TelimcilerDetailsConta .TelimDetailsRight .TelimcilerDetailsRightImgBox2 {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ width: 80%;
+}
+
+main .TelimcilerDetailsConta .TelimDetailsRight .TelimcilerDetailsRightImgBox2 .TelimcilerDetailsRightImgBox2MiniBox{
+  width: 133px;
+  height: 130px;
+}
+
+main .TelimcilerDetailsConta .TelimDetailsRight .TelimcilerDetailsRightImgBox2 .TelimcilerDetailsRightImgBox2MiniBox img{
+width: 100%;
+height: 100%;
+}
+
+main .TelimcilerDetailsConta .TelimDetailsRight .TelimcilerDetailsRightImgBox3 {
+  width: 150px;
+  height: 96px;
+}
+main .TelimcilerDetailsConta .TelimDetailsRight .TelimcilerDetailsRightImgBox4 {
+  width: 90px;
+  height:120px;
+}
+
+main .TelimcilerDetailsConta .TelimDetailsRight .TelimcilerDetailsRightImgBox1 img{
+  width: 100%;
+  height: 100%;
+}
+
+main .TelimcilerDetailsConta .TelimDetailsRight .TelimcilerDetailsRightImgBox3 img{
+  width: 100%;
+  height: 100%;
+}
+main .TelimcilerDetailsConta .TelimDetailsRight .TelimcilerDetailsRightImgBox4 img{
+  width: 100%;
+  height: 100%;
+}
+
+main .TelimcilerDetailsConta .TelimDetailsLeftbox1{
+  background-color: transparent !important;
+  padding: 0px !important;
+}
+
+
+main #TəlimçilərDetails .TelimDetailsConta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  height: 480px;
+}
+
+
+main #TəlimçilərDetails .TelimDetailsConta2{
+  height: 70vh;
+  padding: 40px 20px;
+}
+
+
+
+
+
+/* responsive design  start */
+
+@media (max-width: 1101px) {
+  main #TəlimçilərDetails{
+    height: fit-content;
+    padding: 50px 0px;
+  }
+  main #təlimlər {
+    width: fit-content;
+  }
+  main #təlimlər .TelimConta {
+    flex-wrap: wrap;
+  }
+  main #haqqında {
+    width: fit-content;
+    height: fit-content;
+  }
+  main #təlimçilər {
+    width: 100%;
+    height: 100%;
+  }
+  footer .footerConta{
+    width: fit-content;
+  }
+  main #TəlimçilərDetails{
+    width: fit-content;
+  }
+}
+@media (max-width: 803px) {
+  main #TəlimçilərDetails .TelimcilerDetailsConta .TelimcilerDetailsLeft {
+    width: 100%;
+    text-align: center;
+  }
+  main #təlimlər .TelimConta {
+    justify-content: center;
+    height: fit-content;
+  }
+  main #təlimlər {
+    height: fit-content;
+    padding: 66px 0;
+  }
+  .TelimContaRight {
+    margin-top: 50px;
+  }
+  main #haqqında .haqqimizdaContaBox .haqqimizdafirstP {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: left;
+  }
+  main #haqqında .haqqimizdaContaBox p {
+    padding: 0 10px;
+  }
+  main #təlimçilər .telimciConta .telimciText h3 {
+    padding: 0 10px;
+  }
+  main #təlimçilər .telimciConta .telimciText p {
+    padding: 10px 10px;
+  }
+  footer .footerConta  .footerTop  .fotDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 250px;
+    height: 250px;
+
+  }
+  footer .footerConta .footerTop .leftFooterImg{
+    width: 280px;
+    height: 250px;
+
+  }
+  footer .footerConta  .footerTop{
+    padding: 20px 0;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 608px) {
+  .fa-bars {
+    display: block !important;
+  }
+  header nav ul {
+    color: white;
+    top: 0;
+    left: -100%;
+    padding: 15px 30px;
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    background-color: #000000;
+  }
+  header nav ul li a {
+    color: white;
+    font-size: 15px;
+  }
+  .swiper-button-prev {
+    left: 20px !important;
+    right: auto;
+  }
+  .swiper-button-next {
+    right: 0px !important;
+  }
+  .arrowLeft {
+    height: 40px;
+  }
+  .arrowRight {
+    height: 40px;
+  }main #əlaqə {
+    padding: 10px 10px;
+    height: fit-content;
+  }
+  main #əlaqə input,main #əlaqə textarea  {
+    width: 100%;
+  }
+  main #əlaqə .checBox {
+    width: 100vw;
+  }
+  main #əlaqə .checConta .formBtn {
+    width: 100vw;
+  }
+  .checConta {
+    gap: 20px;
+    width: 94vw 
+  }
+  main #əlaqə .checBox .chec {
+    width: 5.5vw;
+    height: 5.5vw;
+}
+footer .footerConta .footerTop .fotDiv {
+  
+  height: 170px;
+}
+header {
+  padding: 10px 0px;
+}
+main #TəlimçilərDetails .TelimDetailsConta {
+  height: 50vh;
+}
+main #TəlimçilərDetails .TelimDetailsConta2 {
+  height: 38vh;
+  padding: 40px 20px;
+}
+}
