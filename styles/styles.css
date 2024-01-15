@@ -917,4 +917,17 @@ main #TəlimçilərDetails .TelimDetailsConta2 {
     position: relative;
     bottom: 10px;
 }
+  main #təlimçilər .telimciConta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+}
+  main #haqqında .haqqimizdaContaBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    gap: 40px;
+}
 }
