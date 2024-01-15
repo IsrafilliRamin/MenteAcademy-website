@@ -959,4 +959,7 @@ main #TəlimçilərDetails .TelimBasliq ,main #TəlimçilərDetails .TelimBasliq
   left: 17px;
   bottom: 40px;
 }
+  main #haqqında .haqqimizdaContaBox h3 {
+  font-size: 22px;
+}
 }
