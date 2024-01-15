@@ -962,4 +962,9 @@ main #TəlimçilərDetails .TelimBasliq ,main #TəlimçilərDetails .TelimBasliq
   main #haqqında .haqqimizdaContaBox h3 {
   font-size: 22px;
 }
+  main #təlimçilər .telimciConta .telimciContaBox .telimciBox .imgBox .imgBoxvecto2 {
+    position: absolute;
+    left: 90px;
+    top: 36px;
+}
 }
