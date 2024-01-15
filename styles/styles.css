@@ -913,4 +913,8 @@ main #TəlimçilərDetails .TelimDetailsConta2 {
     border-radius: 0px 0px 0px 230.5px;
     background: var(--black);
 }
+  main #təlimlər .TelimConta .TelimContaLeft .TelimContaLeftBox1 {
+    position: relative;
+    bottom: 10px;
+}
 }
