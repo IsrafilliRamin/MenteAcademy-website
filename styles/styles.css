@@ -881,8 +881,8 @@ main #TəlimçilərDetails .TelimDetailsConta {
   height: 500px;
 }
 main #TəlimçilərDetails .TelimDetailsConta2 {
-  height: 38vh;
-  padding: 40px 20px;
+    height: fit-content;
+    padding: 0px 20px;
 }
   main #təlimlər .TelimConta .TelimContaLeft .TelimContaLeftBox2 {
     transform: rotate(180deg);
@@ -929,5 +929,34 @@ main #TəlimçilərDetails .TelimDetailsConta2 {
     justify-content: center;
     height: fit-content;
     gap: 40px;
+}
+main #təlimçilər .telimciConta .telimciText h3,main #təlimçilər .TelimBasliq, main #haqqında .TelimBasliq,main #təlimlər .TelimBasliq{
+  font-size: 22px;
+  margin: 10px 0px;
+}
+  main #təlimçilər .telimciConta .telimciText p {
+ padding: 0px 10px;
+  font-size: 16px;
+ 
+}
+main #təlimçilər .TelimBasliq, main #haqqında .TelimBasliq,main #təlimlər .TelimBasliq{
+  margin-left: 10px;
+}
+main #haqqında .haqqimizdaContaBox p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+}
+main #əlaqə input::placeholder,main #əlaqə input {
+  font-size: 22px;
+}
+main #TəlimçilərDetails .TelimDetailsConta2 {
+  height: fit-content;
+  padding: 0px 20px;
+}
+main #TəlimçilərDetails .TelimBasliq ,main #TəlimçilərDetails .TelimBasliq{
+  position: relative;
+  left: 17px;
+  bottom: 40px;
 }
 }
